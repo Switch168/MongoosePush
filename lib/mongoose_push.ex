@@ -22,6 +22,7 @@ defmodule MongoosePush do
           | :alert
           | :data
           | :topic
+          | :apns_push_type
           | :priority
           | :time_to_live
           | :mutable_content

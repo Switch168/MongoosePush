@@ -53,6 +53,7 @@ defmodule MongoosePush.API.V3 do
 
     # Only for APNS, alert/data independent
     optional(:topic, type: String)
+    optional(:apns_push_type, type: String)
 
     optional :alert, type: Map do
       requires(:body, type: String)

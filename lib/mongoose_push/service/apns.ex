@@ -31,7 +31,6 @@ defmodule MongoosePush.Service.APNS do
     # Setup non-silent notification
     alert = request.alert
     default_topic = State.get_default_topic(pool)
-
     Notification.new(device_id, Map.get(request, :mode, :prod))
     |> Notification.add_title(alert.title)
     |> Notification.add_body(alert.body)
